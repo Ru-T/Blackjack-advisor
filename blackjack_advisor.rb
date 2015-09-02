@@ -60,7 +60,7 @@ dealer_card = evaluate_card(dealer).to_i
 
 total = first_card + second_card
 
-puts "Your total is #{total}. The dealer has #{dealer_card}."
+puts "Your total is #{total}. The dealer has a #{dealer_card}."
 if first_card == second_card
   puts "Your optimal next move is #{blackjack_hash["pairs"][dealer_card][total]}!"
 elsif first_card == 11 || second_card == 11
