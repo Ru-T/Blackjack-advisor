@@ -10,7 +10,8 @@ end
 
 blackjack_hash = Hash.new
 
-blackjack_hash = {"soft" =>
+blackjack_hash =
+{"soft" =>
   {2 => {13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "DOUBLE HIT", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
    3 => {13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "DOUBLE HIT", 18 => "DOUBLE STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
    4 => {13 => "DOUBLE HIT", 14 => "DOUBLE HIT", 15 => "DOUBLE HIT", 16 => "DOUBLE HIT", 17 => "DOUBLE HIT", 18 => "DOUBLE STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
@@ -20,9 +21,8 @@ blackjack_hash = {"soft" =>
    8 => {13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "HIT", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
    9 => {13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "HIT", 18 => "HIT", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
   10 => {13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "HIT", 18 => "HIT", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
-  11 => {13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "HIT", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"}}}
-
-  blackjack_hash = {"hard" =>
+  11 => {13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "HIT", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"}},
+"hard" =>
     {2 => {5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "HIT", 9 => "DOUBLE HIT", 10 => "DOUBLE HIT", 11 => "DOUBLE HIT", 12 => "HIT", 13 => "STAND", 14 => "STAND", 15 => "STAND", 16 => "STAND", 17 => "STAND", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
      3 => {5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "HIT", 9 => "DOUBLE HIT", 10 => "DOUBLE HIT", 11 => "DOUBLE HIT", 12 => "HIT", 13 => "STAND", 14 => "STAND", 15 => "STAND", 16 => "STAND", 17 => "STAND", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
      4 => {5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "HIT", 9 => "DOUBLE HIT", 10 => "DOUBLE HIT", 11 => "DOUBLE HIT", 12 => "STAND", 13 => "STAND", 14 => "STAND", 15 => "STAND", 16 => "STAND", 17 => "STAND", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
@@ -32,19 +32,18 @@ blackjack_hash = {"soft" =>
      8 => {5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "HIT", 9 => "HIT", 10 => "DOUBLE HIT", 11 => "DOUBLE HIT", 12 => "HIT", 13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "STAND", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
      9 => {5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "HIT", 9 => "HIT", 10 => "DOUBLE HIT", 11 => "DOUBLE HIT", 12 => "HIT", 13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "STAND", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
      10 => {5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "HIT", 9 => "HIT", 10 => "HIT", 11 => "DOUBLE HIT", 12 => "HIT", 13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "STAND", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
-     11 => {5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "HIT", 9 => "HIT", 10 => "HIT", 11 => "DOUBLE HIT", 12 => "HIT", 13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "STAND", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"}}}
-
-     blackjack_hash = {"pairs" =>
-       {2 => {2 => "SPLIT", 3 => "SPLIT", 4 => "HIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
-        3 => {2 => "SPLIT", 3 => "SPLIT", 4 => "HIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
-        4 => {2 => "SPLIT", 3 => "SPLIT", 4 => "SPLIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
-        5 => {2 => "SPLIT", 3 => "SPLIT", 4 => "SPLIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
-        6 => {2 => "SPLIT", 3 => "SPLIT", 4 => "SPLIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
-        7 => {2 => "SPLIT", 3 => "SPLIT", 4 => "HIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "STAND", 10 => "STAND", 11 => "SPLIT"},
-        8 => {2 => "HIT", 3 => "SPLIT", 4 => "HIT", 5 => "DOUBLE HIT", 6 => "HIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
-        9 => {2 => "HIT", 3 => "HIT", 4 => "HIT", 5 => "DOUBLE HIT", 6 => "HIT", 7 => "HIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
-        10 => {2 => "HIT", 3 => "HIT", 4 => "HIT", 5 => "HIT", 6 => "HIT", 7 => "STAND", 8 => "SPLIT", 9 => "STAND", 10 => "STAND", 11 => "SPLIT"},
-        11 => {2 => "HIT", 3 => "HIT", 4 => "HIT", 5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "SPLIT", 9 => "STAND", 10 => "STAND", 11 => "SPLIT"}}}
+     11 => {5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "HIT", 9 => "HIT", 10 => "HIT", 11 => "DOUBLE HIT", 12 => "HIT", 13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "STAND", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"}},
+"pairs" =>
+       {2 => {4 => "SPLIT", 6 => "SPLIT", 8 => "HIT", 10 => "DOUBLE HIT", 12 => "SPLIT", 14 => "SPLIT", 16 => "SPLIT", 18 => "SPLIT", 20 => "STAND", 22 => "SPLIT"},
+        3 => {4 => "SPLIT", 6 => "SPLIT", 8 => "HIT", 10 => "DOUBLE HIT", 12 => "SPLIT", 14 => "SPLIT", 16 => "SPLIT", 18 => "SPLIT", 20 => "STAND", 22 => "SPLIT"},
+        4 => {4 => "SPLIT", 6 => "SPLIT", 8 => "SPLIT", 10 => "DOUBLE HIT", 12 => "SPLIT", 14 => "SPLIT", 16 => "SPLIT", 18 => "SPLIT", 20 => "STAND", 22 => "SPLIT"},
+        5 => {4 => "SPLIT", 6 => "SPLIT", 8 => "SPLIT", 10 => "DOUBLE HIT", 12 => "SPLIT", 14 => "SPLIT", 16 => "SPLIT", 18 => "SPLIT", 20 => "STAND", 22 => "SPLIT"},
+        6 => {4 => "SPLIT", 6 => "SPLIT", 8 => "SPLIT", 10 => "DOUBLE HIT", 12 => "SPLIT", 14 => "SPLIT", 16 => "SPLIT", 18 => "SPLIT", 20 => "STAND", 22 => "SPLIT"},
+        7 => {4 => "SPLIT", 6 => "SPLIT", 8 => "HIT", 10 => "DOUBLE HIT", 12 => "SPLIT", 14 => "SPLIT", 16 => "SPLIT", 18 => "STAND", 20 => "STAND", 22 => "SPLIT"},
+        8 => {4 => "HIT", 6 => "SPLIT", 8 => "HIT", 10 => "DOUBLE HIT", 12 => "HIT", 14 => "SPLIT", 16 => "SPLIT", 18 => "SPLIT", 20 => "STAND", 22 => "SPLIT"},
+        9 => {4 => "HIT", 6 => "HIT", 8 => "HIT", 10 => "DOUBLE HIT", 12 => "HIT", 14 => "HIT", 16 => "SPLIT", 18 => "SPLIT", 20 => "STAND", 22 => "SPLIT"},
+        10 => {4 => "HIT", 6 => "HIT", 8 => "HIT", 10 => "HIT", 12 => "HIT", 14 => "STAND", 16 => "SPLIT", 18 => "STAND", 20 => "STAND", 22 => "SPLIT"},
+        11 => {4 => "HIT", 6 => "HIT", 8 => "HIT", 10 => "HIT", 12 => "HIT", 14 => "HIT", 16 => "SPLIT", 18 => "STAND", 20 => "STAND", 22 => "SPLIT"}}}
 
 puts "This is a game of Blackjack. Please enter the worth of the card - 2 to 10 or A, which is 11."
 
