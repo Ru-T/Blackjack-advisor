@@ -1,4 +1,4 @@
-# Create a program which will take information about a current blackjack hand and return the optimal action for the player to take.
+## Create a program which will take information about a current blackjack hand and return the optimal action for the player to take.
 # Your goal for this assignment is to store the set of optimal moves for a 1 deck blackjack hand, ask the user for his or her current hand
 # (and the dealer's up card), then give the user his or her optimal move.
 # For normal mode, use the default settings that occur on this page when you load it (1 deck, etc).

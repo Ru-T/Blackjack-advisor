@@ -1,17 +1,43 @@
-# Create a program which will take information about a current blackjack hand and return the optimal action for the player to take.
-# Your goal for this assignment is to store the set of optimal moves for a 1 deck blackjack hand, ask the user for his or her current hand
-# (and the dealer's up card), then give the user his or her optimal move.
-# For normal mode, use the default settings that occur on this page when you load it (1 deck, etc).
-# Your program must use a hash within a hash (at least) to solve this problem. The prompts to the user should go something like this:
+# Normal mode
 
-#Please enter your first card:
-#(user enters 9)
-#Please enter your second card:
-#(user enters 9)
-#Please enter the dealer's card:
-#(user enters 7)
-#Your optimal move is to stand.
+# add if user enters a number outside of the range, return an error.
+# fix that ace = 11 - not working below
 
-#You can either allow the user to enter J, Q, or K for Jack, Queen, or King, respectively, or you can expect the user to enter a 10 for any of these.
-#However, the user should have to enter A for an Ace.
-#It is up to you to use the Googlez to determine what makes a hand "Soft" or "Hard."
+
+#hard_hash = Hash.new
+
+#pairs_hash = Hash.new
+
+#soft_hash = {"dealer" => {"total" => "action"}}
+#soft_hash[dealer][total] = action
+#soft_hash[2][13] = "hit"
+
+puts "This is a game of Blackjack. Please enter the worth of the card - between 2 and 10 or A, which is 11."
+puts "IMPORTANT: For face cards (Jack, Queen, King), please enter 10."
+
+puts "Please enter your first card."
+first = gets.chomp.to_i
+
+puts "Please enter your second card."
+second = gets.chomp.to_i
+
+puts "Please enter the dealer's card."
+dealer = gets.chomp.to_i
+
+#puts "Your optimal move is #{action}!"
+
+total = first + second
+
+soft_hash = Hash.new
+soft_hash[dealer] = Hash.new
+soft_hash[dealer][total] = first # for now, should be action
+#soft_hash[dealer] = total
+puts soft_hash
+
+#if first == ace || second == ace
+#  use soft_hash
+#elsif first == second
+#  use pairs_hash
+#else
+#  use hard_hash
+#end
