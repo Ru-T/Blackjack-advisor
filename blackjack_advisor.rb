@@ -34,6 +34,18 @@ blackjack_hash = {"soft" =>
      10 => {5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "HIT", 9 => "HIT", 10 => "HIT", 11 => "DOUBLE HIT", 12 => "HIT", 13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "STAND", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"},
      11 => {5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "HIT", 9 => "HIT", 10 => "HIT", 11 => "DOUBLE HIT", 12 => "HIT", 13 => "HIT", 14 => "HIT", 15 => "HIT", 16 => "HIT", 17 => "STAND", 18 => "STAND", 19 => "STAND", 20 => "STAND", 21 => "STAND"}}}
 
+     blackjack_hash = {"pairs" =>
+       {2 => {2 => "SPLIT", 3 => "SPLIT", 4 => "HIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
+        3 => {2 => "SPLIT", 3 => "SPLIT", 4 => "HIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
+        4 => {2 => "SPLIT", 3 => "SPLIT", 4 => "SPLIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
+        5 => {2 => "SPLIT", 3 => "SPLIT", 4 => "SPLIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
+        6 => {2 => "SPLIT", 3 => "SPLIT", 4 => "SPLIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
+        7 => {2 => "SPLIT", 3 => "SPLIT", 4 => "HIT", 5 => "DOUBLE HIT", 6 => "SPLIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "STAND", 10 => "STAND", 11 => "SPLIT"},
+        8 => {2 => "HIT", 3 => "SPLIT", 4 => "HIT", 5 => "DOUBLE HIT", 6 => "HIT", 7 => "SPLIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
+        9 => {2 => "HIT", 3 => "HIT", 4 => "HIT", 5 => "DOUBLE HIT", 6 => "HIT", 7 => "HIT", 8 => "SPLIT", 9 => "SPLIT", 10 => "STAND", 11 => "SPLIT"},
+        10 => {2 => "HIT", 3 => "HIT", 4 => "HIT", 5 => "HIT", 6 => "HIT", 7 => "STAND", 8 => "SPLIT", 9 => "STAND", 10 => "STAND", 11 => "SPLIT"},
+        11 => {2 => "HIT", 3 => "HIT", 4 => "HIT", 5 => "HIT", 6 => "HIT", 7 => "HIT", 8 => "SPLIT", 9 => "STAND", 10 => "STAND", 11 => "SPLIT"}}}
+
 puts "This is a game of Blackjack. Please enter the worth of the card - 2 to 10 or A, which is 11."
 
 puts "Please enter your first card."
